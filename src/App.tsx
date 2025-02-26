@@ -1,15 +1,13 @@
-import Button from '@/components/Button';
-import Button1 from '@/components/Button1';
+import ThemeSwitcher from '@/components/ThemeSwitcher';
+import ErrorButton from '@/components/ErrorButton';
 
 const App = () => {
   return (
-    <>
-      <div className="flex items-center justify-center h-screen bg-gray-100">
-        <h1>Starter</h1>
-        <Button />
-        <Button1 />
-      </div>
-    </>
+    <div className="flex flex-col items-center justify-center h-screen bg-background text-foreground">
+      <h1 className="text-2xl font-bold">ShadCN + Redux Theme Switcher</h1>
+      <ThemeSwitcher />
+      <ErrorButton />
+    </div>
   );
 };
 
